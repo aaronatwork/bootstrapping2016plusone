@@ -1,0 +1,18 @@
+Keep in mind that Bootstrap 3 is mobile-first. Mobile-first styles are found throughout the entire Bootstrap library instead of in separate files.
+To ensure proper rendering and touch zooming, also add the viewport meta tag inside the <head> element:
+<meta name="viewport" content="width=device-width, initial-scale=1">
+The width=device-width sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+The initial-scale=1 sets the initial zoom level when the page is first loaded by the browser.
+
+
+Put Your HTML Elements Inside Containers
+Bootstrap also requires a containing element to wrap site contents.
+
+There are two containers to choose from:
+
+1. Use the .container class for a responsive fixed width container:
+<div class="container">
+
+2. Use the .container-fluid class for a full width container, spanning the entire width of the viewport:
+<div class="container-fluid">
+
